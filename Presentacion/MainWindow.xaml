@@ -1,0 +1,54 @@
+﻿<Window x:Class="Presentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion"
+        mc:Ignorable="d"
+        Title="Demo WPF" Height="500" Width="850" Background="#d8d4d5">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Tareas Pendientes" FontWeight="Bold" FontSize="24" />
+            <Button Name="BtnInicio" 
+                    Content="Inicio" 
+                    Width="200" 
+                    Height="40" 
+                    VerticalAlignment="Top" 
+                    HorizontalContentAlignment="Left"
+                    Padding="15,0,0,0"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    FontWeight="Normal"/>
+            <Button Name="BtnNuevaTarea" 
+                    Content="Nueva Tarea" 
+                    Width="200" 
+                    Height="40" 
+                    VerticalAlignment="Top" 
+                    HorizontalContentAlignment="Left"
+                    Padding="15,0,0,0"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    FontWeight="Normal" Click="BtnNuevaTarea_Click"/>
+            <Button Name="BtnCategoria" 
+                    Content="Ingreso Categorias" 
+                    Width="200" 
+                    Height="40" 
+                    VerticalAlignment="Top" 
+                    HorizontalContentAlignment="Left"
+                    Padding="15,0,0,0"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    FontWeight="Normal" Click="BtnCategoria_Click"/>
+        </StackPanel>
+
+        <Grid x:Name="GrdMain" Grid.Column="1">
+
+        </Grid>
+
+    </Grid>
+</Window>
